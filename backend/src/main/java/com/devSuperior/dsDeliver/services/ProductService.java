@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devSuperior.dsDeliver.DTO.productDTO;
+import com.devSuperior.dsDeliver.DTO.ProductDTO;
 import com.devSuperior.dsDeliver.entities.Product;
 import com.devSuperior.dsDeliver.repositories.ProductRepository;
 
@@ -18,8 +18,9 @@ public class ProductService {
 	private ProductRepository repository;
 
 	@Transactional(readOnly = true)
-	public List<productDTO> findAll() {
+	public List<ProductDTO> findAll() {
 	List<Product> list = repository.findAllByOrderByNameAsc();
-	return list.stream().map(x -> new productDTO(x)).collect(Collectors.toList());
+	return list.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
+
 	}
 }
