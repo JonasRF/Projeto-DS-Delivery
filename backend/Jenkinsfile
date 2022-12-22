@@ -1,0 +1,22 @@
+pipeline { 
+    agent any 
+
+    stages { 
+	stage('Git checkout') {
+	git branch: 'main' , url: 'https://github.com/JonasRF/projeto-dsdeliver.git'
+            }
+        }
+
+        stage('Printing Hello Word'){ 
+            steps{
+                echo "Pipeline Usando Jenkinsfile"
+            }
+        }
+
+	stage('Printing Hello Word'){ 
+            steps{
+                echo "Hello World!"
+            }
+	}
+     }
+  }
