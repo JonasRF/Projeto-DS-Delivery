@@ -1,8 +1,11 @@
+import StepsHeader from './SteapesHeader';
 import './styles.css';
 
 const Orders = () => {
     return (
-        <div>Orders</div>
+        <div className='orders-container'>
+            <StepsHeader />
+        </div>
     )
 }
 
