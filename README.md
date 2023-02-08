@@ -9,13 +9,17 @@
 ![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/assets/camadas.png "Padrão camadas")
 
 ## front end web
-Telas do sistema
+#### Telas do sistema
 https://www.figma.com/file/9KM3LJbfPU5OH4kEWbPqnC/SDS2-DevSuperior
 
-Criando projeto com create-react-app:
-npx create-react-app front-web --template typescript --use-npm
-URL de busca de endereços do MapBox:
+### Criando projeto:
+
+ Versão atual utilizando node 16 eo vite para auxiliar nas tarefas de configuração 
+ yarn create vite frontend --template react-ts
+
+### URL de busca de endereços do MapBox:
+
 https://api.mapbox.com/geocoding/v5/mapbox.places/${local}.json?access_token=${mapboxToken}
 
-Conteúdo do arquivo _redirects:
+### Conteúdo do arquivo _redirects:
 /*  /index.html  200
