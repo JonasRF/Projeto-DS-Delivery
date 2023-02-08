@@ -15,6 +15,7 @@ https://www.figma.com/file/9KM3LJbfPU5OH4kEWbPqnC/SDS2-DevSuperior
 ### Criando projeto:
 
  Versão atual utilizando node 16 eo vite para auxiliar nas tarefas de configuração 
+ 
  yarn create vite frontend --template react-ts
 
 ### URL de busca de endereços do MapBox:
